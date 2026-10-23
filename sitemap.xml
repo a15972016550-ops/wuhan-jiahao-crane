@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://a15972016550-ops.github.io/wuhan-jiahao-crane/</loc>
-    <lastmod>2026-10-23</lastmod>
-  </url>
-  <url>
-    <loc>https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html</loc>
-    <lastmod>2026-10-23</lastmod>
-  </url>
+  <url><loc>https://a15972016550-ops.github.io/wuhan-jiahao-crane/</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://a15972016550-ops.github.io/wuhan-jiahao-crane/faq.html</loc><lastmod>2026-10-23</lastmod></url>
 </urlset>
