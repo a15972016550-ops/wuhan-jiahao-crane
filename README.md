@@ -5,3 +5,5 @@
 周经理：**15972016550**（电话、微信同号）。办公点：武汉市汉阳区汉阳大道 709 号磨山港湾一期；主要停车点在木棉路，到访前请电话确认入口。
 
 网站：https://a15972016550-ops.github.io/wuhan-jiahao-crane/
+
+外地客户询价指南：https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html
