@@ -28,8 +28,8 @@
     <circle cx="101" cy="218" r="6" fill="#f4bd63"/>
     <text x="122" y="225" fill="#e6eef3" font-size="19" font-weight="600" letter-spacing="1.5">汽车吊出租咨询</text>
     <text x="76" y="326" fill="#ffffff" font-size="76" font-weight="800" letter-spacing="3">武汉吊车出租</text>
-    <text x="80" y="382" fill="#c3d3de" font-size="26" letter-spacing="1.2">汉阳老关村 · 木棉路周边</text>
-    <text x="80" y="423" fill="#c3d3de" font-size="26" letter-spacing="1.2">武汉市内及周边可咨询</text>
+    <text x="80" y="382" fill="#c3d3de" font-size="26" letter-spacing="1.2">汉阳区 · 经开区（沌口）· 蔡甸区</text>
+    <text x="80" y="423" fill="#c3d3de" font-size="26" letter-spacing="1.2">武汉跨区及周边约10—30公里可咨询</text>
 
     <g filter="url(#shadow)">
       <rect x="76" y="473" width="928" height="297" rx="28" fill="#f5f7f8"/>
