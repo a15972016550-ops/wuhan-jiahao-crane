@@ -26,6 +26,8 @@
 
 ## 公开页面
 
+- [公司全称与联系方式](https://a15972016550-ops.github.io/wuhan-jiahao-crane/company.html)
+
 - [汽车吊出租服务信息卡（图片）](https://a15972016550-ops.github.io/wuhan-jiahao-crane/assets/jiahao-service-card.svg)
 - [公司主页](https://a15972016550-ops.github.io/wuhan-jiahao-crane/)
 - [服务区域](https://a15972016550-ops.github.io/wuhan-jiahao-crane/fuwu-area.html)

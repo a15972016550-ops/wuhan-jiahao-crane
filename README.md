@@ -25,6 +25,8 @@
 
 ## 嘉豪吊装公开信息页
 
+- [公司介绍与联系方式](https://a15972016550-ops.github.io/wuhan-jiahao-crane/company.html)
+
 - [武汉汽车吊出租主页](https://a15972016550-ops.github.io/wuhan-jiahao-crane/)
 - [汉阳服务区域](https://a15972016550-ops.github.io/wuhan-jiahao-crane/fuwu-area.html)
 - [汽车吊吨位咨询说明](https://a15972016550-ops.github.io/wuhan-jiahao-crane/dunwei.html)
