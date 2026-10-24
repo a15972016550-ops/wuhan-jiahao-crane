@@ -1,0 +1,89 @@
+name: Notify IndexNow for changed pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "**/*.html"
+      - "sitemap.xml"
+      - ".github/workflows/indexnow.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Notify IndexNow about changed public URLs
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import subprocess
+          import sys
+          from pathlib import Path
+          from urllib.error import HTTPError
+          from urllib.parse import quote
+          from urllib.request import Request, urlopen
+
+          base = "https://a15972016550-ops.github.io/wuhan-jiahao-crane/"
+          host = "a15972016550-ops.github.io"
+          before = os.environ.get("BEFORE_SHA", "")
+          current = os.environ["CURRENT_SHA"]
+
+          if before and set(before) != {"0"}:
+              changed = subprocess.check_output(
+                  ["git", "diff", "--name-only", "--diff-filter=ACMRD", before, current],
+                  text=True,
+              ).splitlines()
+          else:
+              changed = subprocess.check_output(
+                  ["git", "ls-files", "*.html", "**/*.html", "sitemap.xml"],
+                  text=True,
+              ).splitlines()
+
+          urls = set()
+          for path in changed:
+              if path == "index.html":
+                  urls.add(base)
+              elif path.endswith(".html"):
+                  urls.add(base + quote(path, safe="/"))
+              elif path == "sitemap.xml":
+                  urls.add(base + "sitemap.xml")
+
+          if not urls:
+              print("No changed public HTML or sitemap URLs; nothing to submit.")
+              sys.exit(0)
+
+          key = Path("6fc78e52c02958b2a79f85c10697ee37.txt").read_text(encoding="utf-8").strip()
+          payload = {
+              "host": host,
+              "key": key,
+              "keyLocation": base + key + ".txt",
+              "urlList": sorted(urls),
+          }
+          request = Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          try:
+              with urlopen(request, timeout=30) as response:
+                  print(f"IndexNow response: HTTP {response.status}; URLs sent: {len(urls)}")
+                  if response.status not in (200, 202):
+                      sys.exit(f"Unexpected IndexNow status: {response.status}")
+          except HTTPError as error:
+              print(f"IndexNow response: HTTP {error.code}; {error.read().decode('utf-8', 'replace')[:500]}")
+              raise
+          PY
