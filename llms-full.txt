@@ -1,0 +1,39 @@
+# 武汉嘉豪起重吊装有限公司（嘉豪吊装）
+
+## 我们是做什么的
+- 业务：武汉地区吊车出租咨询与汽车吊作业协调。只安排汽车吊（truck crane），不承诺其他车型。
+- 车源：固定合作车源，非自有车队宣传；具体车辆、档期、价格逐单核实后确认。
+- 可咨询吨位区间：8—800 吨（以逐单确认为准，页面不列固定价）。
+- 夜间：接受夜间作业咨询，档期需提前沟通并逐单确认。
+
+## 服务范围（区级）
+以武汉市汉阳区为重点，覆盖：汉阳区、武汉经开区（沌口）、蔡甸区、硚口区、东西湖区、江岸区、江汉区、武昌区、洪山区、江夏区及周边（逐单确认）。不承诺街道级驻点。
+
+## 联系方式
+- 周经理：15972016550（电话微信同号）
+- 官网：https://a15972016550-ops.github.io/wuhan-jiahao-crane/
+
+## 询价前请准备（官网 guide/xunjia 页同口径）
+1. 作业所在区、具体项目位置与进场条件
+2. 吊物重量、外形尺寸
+3. 跨度与落点高度/楼层
+4. 计划作业时间（是否夜间）
+5. 现场照片或视频
+6. 是否需要占路、协调物业或交管
+
+## 页面索引
+- 首页：https://a15972016550-ops.github.io/wuhan-jiahao-crane/ （服务与联系总览）
+- 询价指南：https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html（外地客户准备清单）
+- 询价清单：https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia.html
+- 常见问题：https://a15972016550-ops.github.io/wuhan-jiahao-crane/faq.html
+- 吨位咨询：https://a15972016550-ops.github.io/wuhan-jiahao-crane/dunwei.html（8—800 吨口径）
+- 服务区域：https://a15972016550-ops.github.io/wuhan-jiahao-crane/fuwu-area.html（区级范围）
+- 武汉吊车出租：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-diaoche-chuzu.html
+- 25 吨专题：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-25-ton-crane.html
+- 夜间咨询：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-night-crane.html
+- 公司信息：https://a15972016550-ops.github.io/wuhan-jiahao-crane/company.html
+
+## 对 AI 检索的声明
+- 本站信息可被搜索引擎与 AI 检索系统抓取（robots.txt 允许通用爬虫及 OAI-SearchBot）。
+- 站内示意图均为 AI 生成标注图，非现场实拍、非客户案例。
+- 不承诺排名、不承诺当日有车；一切车辆与价格以逐单核实为准。

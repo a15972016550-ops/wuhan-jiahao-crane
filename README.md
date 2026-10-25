@@ -35,3 +35,7 @@
 - [外地客户询价指南](https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html)
 - [汉阳汽车吊询价要点](https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia.html)
 - [汽车吊出租常见问题](https://a15972016550-ops.github.io/wuhan-jiahao-crane/faq.html)
+
+## AI/爬虫可发现性
+
+- 摘要事实页：llms.txt；全文事实页：llms-full.txt（所有页面页脚均有链接）。
