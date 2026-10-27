@@ -45,7 +45,7 @@
 
 - 夜间汽车吊咨询与询价准备：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-night-crane.html
 
-- [公司完整事实与页面索引](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms-full.txt)
+- [公司完整事实与页面索引](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms-full.txt)\n- [官网更新订阅（RSS）](https://a15972016550-ops.github.io/wuhan-jiahao-crane/feed.xml)（机器可读；只列已公开的公司与汽车吊询价知识页面）
 
 ## 已发布的外部询价资料
 
