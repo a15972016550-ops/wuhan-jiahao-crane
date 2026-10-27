@@ -40,12 +40,14 @@
 - [武汉经开区（沌口）汽车吊询价与园区进场信息](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-jingkai-crane.html)（区级服务与询价准备；不表示街道驻点）
 - [汽车吊询价信息可复制模板](https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia-moban.html)（电话或微信沟通清单；一般性询价准备，非车辆选型或施工方案）
 - [汽车吊进场道路、站车与支腿条件](https://a15972016550-ops.github.io/wuhan-jiahao-crane/jinchang-tiaojian.html)（一般性询价准备，非施工案例或安全方案）
+- [吊装半径与作业高度为什么影响汽车吊询价](https://a15972016550-ops.github.io/wuhan-jiahao-crane/diaozhuang-banjing.html)（一般性询价知识，非车辆选型或施工方案）
 - [常见问题](https://a15972016550-ops.github.io/wuhan-jiahao-crane/faq.html)
 - [武汉吊车出租（汽车吊）](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-diaoche-chuzu.html)
 
 - 夜间汽车吊咨询与询价准备：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-night-crane.html
 
-- [公司完整事实与页面索引](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms-full.txt)\n- [官网更新订阅（RSS）](https://a15972016550-ops.github.io/wuhan-jiahao-crane/feed.xml)（机器可读；只列已公开的公司与汽车吊询价知识页面）
+- [公司完整事实与页面索引](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms-full.txt)
+- [官网更新订阅（RSS）](https://a15972016550-ops.github.io/wuhan-jiahao-crane/feed.xml)（机器可读；只列已公开的公司与汽车吊询价知识页面）
 
 ## 已发布的外部询价资料
 
