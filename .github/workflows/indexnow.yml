@@ -8,6 +8,7 @@ on:
       - "**/*.html"
       - "sitemap.xml"
       - ".github/workflows/indexnow.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,75 +16,109 @@ permissions:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Check out the site
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
 
-      - name: Notify IndexNow about changed public URLs
+      - name: Verify the published version and notify IndexNow
         env:
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           python3 - <<'PY'
+          import hashlib
           import json
           import os
           import subprocess
           import sys
+          import time
+          import xml.etree.ElementTree as ET
+          from concurrent.futures import ThreadPoolExecutor
           from pathlib import Path
-          from urllib.error import HTTPError
-          from urllib.parse import quote
+          from urllib.error import HTTPError, URLError
+          from urllib.parse import quote, unquote, urlsplit
           from urllib.request import Request, urlopen
 
-          base = "https://a15972016550-ops.github.io/wuhan-jiahao-crane/"
-          host = "a15972016550-ops.github.io"
-          before = os.environ.get("BEFORE_SHA", "")
-          current = os.environ["CURRENT_SHA"]
+          BASE = "https://whdiaozhuang.cn/"
+          HOST = "whdiaozhuang.cn"
 
-          if before and set(before) != {"0"}:
-              changed = subprocess.check_output(
-                  ["git", "diff", "--name-only", "--diff-filter=ACMRD", before, current],
+          def url_for(path):
+              return BASE if path == "index.html" else BASE + quote(path, safe="/")
+
+          def sitemap_paths():
+              root = ET.parse("sitemap.xml").getroot()
+              paths = set()
+              for loc in root.findall(".//{*}loc"):
+                  parsed = urlsplit(loc.text or "")
+                  if parsed.scheme != "https" or parsed.netloc != HOST or parsed.query or parsed.fragment:
+                      raise ValueError("Sitemap contains an unexpected URL")
+                  path = unquote(parsed.path.lstrip("/")) or "index.html"
+                  if path.endswith(".html") and ".." not in Path(path).parts:
+                      paths.add(path)
+              return paths
+
+          def changed_paths():
+              before = os.environ.get("BEFORE_SHA", "")
+              current = os.environ.get("CURRENT_SHA", "")
+              if os.environ.get("EVENT_NAME") == "workflow_dispatch" or not before or set(before) == {"0"}:
+                  return sitemap_paths()
+              lines = subprocess.check_output(
+                  ["git", "diff", "--no-renames", "--name-only", "--diff-filter=ACMRD", before, current],
                   text=True,
               ).splitlines()
-          else:
-              changed = subprocess.check_output(
-                  ["git", "ls-files", "*.html", "**/*.html", "sitemap.xml"],
-                  text=True,
-              ).splitlines()
+              return {p for p in lines if p == "sitemap.xml" or p.endswith(".html")}
 
-          urls = set()
-          for path in changed:
-              if path == "index.html":
-                  urls.add(base)
-              elif path.endswith(".html"):
-                  urls.add(base + quote(path, safe="/"))
-              elif path == "sitemap.xml":
-                  urls.add(base + "sitemap.xml")
+          def published(path):
+              expected = Path(path)
+              request = Request(url_for(path), headers={"Accept-Encoding": "identity", "Cache-Control": "no-cache"})
+              try:
+                  with urlopen(request, timeout=8) as response:
+                      content = response.read()
+                      if not expected.is_file():
+                          return False
+                      return hashlib.sha256(content).digest() == hashlib.sha256(expected.read_bytes()).digest()
+              except HTTPError as error:
+                  return not expected.is_file() and error.code in (404, 410)
+              except (URLError, OSError, TimeoutError):
+                  return False
 
-          if not urls:
-              print("No changed public HTML or sitemap URLs; nothing to submit.")
-              sys.exit(0)
+          def main():
+              paths = changed_paths()
+              if not paths:
+                  print("No changed public HTML or sitemap URLs; nothing to submit.")
+                  return
 
-          key = Path("6fc78e52c02958b2a79f85c10697ee37.txt").read_text(encoding="utf-8").strip()
-          payload = {
-              "host": host,
-              "key": key,
-              "keyLocation": base + key + ".txt",
-              "urlList": sorted(urls),
-          }
-          request = Request(
-              "https://api.indexnow.org/indexnow",
-              data=json.dumps(payload).encode("utf-8"),
-              headers={"Content-Type": "application/json; charset=utf-8"},
-              method="POST",
-          )
-          try:
+              deadline = time.monotonic() + 120
+              pending = set(paths)
+              while pending:
+                  with ThreadPoolExecutor(max_workers=6) as pool:
+                      results = list(pool.map(published, sorted(pending)))
+                  pending = {p for p, ready in zip(sorted(pending), results) if not ready}
+                  if not pending:
+                      break
+                  if time.monotonic() >= deadline:
+                      raise SystemExit("Live site is not yet the checked-out version; no URLs submitted: " + ", ".join(sorted(pending)))
+                  print("Waiting for the live site to match:", ", ".join(sorted(pending)))
+                  time.sleep(10)
+
+              key = Path("6fc78e52c02958b2a79f85c10697ee37.txt").read_text(encoding="utf-8").strip()
+              key_location = BASE + key + ".txt"
+              with urlopen(key_location, timeout=10) as response:
+                  if response.read().decode("utf-8").strip() != key:
+                      raise SystemExit("Live IndexNow verification file does not match; no URLs submitted.")
+              payload = {"host": HOST, "key": key, "keyLocation": key_location,
+                         "urlList": sorted(url_for(path) for path in paths)}
+              request = Request("https://api.indexnow.org/indexnow", data=json.dumps(payload).encode("utf-8"),
+                                headers={"Content-Type": "application/json; charset=utf-8"}, method="POST")
               with urlopen(request, timeout=30) as response:
-                  print(f"IndexNow response: HTTP {response.status}; URLs sent: {len(urls)}")
+                  print("IndexNow response: HTTP", response.status, "URLs sent:", len(paths))
                   if response.status not in (200, 202):
-                      sys.exit(f"Unexpected IndexNow status: {response.status}")
-          except HTTPError as error:
-              print(f"IndexNow response: HTTP {error.code}; {error.read().decode('utf-8', 'replace')[:500]}")
-              raise
+                      raise SystemExit("Unexpected IndexNow response")
+
+          if __name__ == "__main__":
+              main()
           PY
