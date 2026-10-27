@@ -38,6 +38,7 @@
 - [外地客户询价指南](https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html)
 - [汉阳汽车吊询价要点](https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia.html)
 - [武汉经开区（沌口）汽车吊询价与园区进场信息](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-jingkai-crane.html)（区级服务与询价准备；不表示街道驻点）
+- [蔡甸区汽车吊出租询价与进场信息](https://a15972016550-ops.github.io/wuhan-jiahao-crane/caidian-crane.html)（区级服务与询价准备；不表示街道驻点）
 - [汽车吊询价信息可复制模板](https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia-moban.html)（电话或微信沟通清单；一般性询价准备，非车辆选型或施工方案）
 - [汽车吊进场道路、站车与支腿条件](https://a15972016550-ops.github.io/wuhan-jiahao-crane/jinchang-tiaojian.html)（一般性询价准备，非施工案例或安全方案）
 - [吊装半径与作业高度为什么影响汽车吊询价](https://a15972016550-ops.github.io/wuhan-jiahao-crane/diaozhuang-banjing.html)（一般性询价知识，非车辆选型或施工方案）
