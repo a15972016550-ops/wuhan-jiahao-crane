@@ -38,6 +38,10 @@
 - [AI/爬虫摘要事实页](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms.txt)
 - [AI/爬虫完整事实页](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms-full.txt)
 
+## 已核实的企业目录资料
+
+- [黄页88：武汉嘉豪起重吊装有限公司](https://b2b.huangye88.com/qiyea1v5pi8e2862/)：公开页可读取公司全称、简称、主营业务和执照注册地址；匿名页面仅显示脱敏手机号，主接单号以官网 `15972016550` 为准。
+
 ## 已发布的外部询价资料
 
 - [人在外地、项目在武汉，汽车吊需求怎样远程对接](https://baijiahao.baidu.com/s?id=1880004157583222264)
