@@ -1,18 +1,35 @@
 # 武汉吊车出租｜武汉嘉豪起重吊装有限公司
 
-武汉嘉豪起重吊装有限公司（对外品牌：武汉吊车出租｜嘉豪吊装）提供武汉汽车吊出租咨询。公司只安排汽车吊，可按需求协调固定合作车源；实际车辆、吨位、档期、现场适用性和报价逐单确认。
+武汉嘉豪起重吊装有限公司（嘉豪吊装 / 嘉豪吊车出租）提供汽车吊出租，含驾驶员，以零租为主，也可包月。
 
-以汉阳区为重点，服务武汉经开区（沌口）、蔡甸区、硚口区、东西湖区、江岸区、江汉区、武昌区、洪山区和江夏区。武汉市内跨区需求，以及向周边延伸约 10—30 公里的项目，均可联系确认车辆与档期。
+经营区域在武汉汉阳、沌口一带；以老关村地铁站为中心 30 公里以内服务，10—15 公里为重点服务区，距离越近响应越快。30 公里以外能否承接待确认。
 
-可咨询 8、25、35、50、80、100、130、200、300、500、800 吨汽车吊需求。所列吨位表示可咨询的需求规格，不代表所有车辆归公司所有或随时有现车。
+可安排 8、10、12、25、35、50、80、100、130、200、300、400、500、600、800 吨汽车吊。公司有自有多吨位车辆，特殊吨位或临时车辆不足时可同行协调；具体车辆和档期逐单确认。
+
+营业执照、司机证件、车辆保险、检测报告和合格证齐全。24 小时可服务，夜间可加班，夜班加班费单独沟通。
 
 ## 联系方式
 
 周经理：**15972016550**（电话、微信同号）
 
-[打开嘉豪吊装官网](https://a15972016550-ops.github.io/wuhan-jiahao-crane/)｜[公司介绍与联系方式](https://a15972016550-ops.github.io/wuhan-jiahao-crane/company.html)
+[打开嘉豪吊装官网](https://whdiaozhuang.cn/)｜[公司介绍与联系方式](https://whdiaozhuang.cn/company.html)
 
-夜间可联系询问；能否安排车辆和人员，以当时实际情况为准。报价按车辆吨位、作业时长、进退场距离、吊装半径和现场条件逐单核实。
+## 汽车吊租赁参考价格
+
+以下价格含油和司机，临租无进场费：
+
+| 吨位 | 一天（8 小时） | 半个台班 |
+| --- | --- | --- |
+| 8—12 吨 | 1000—1200 元 | 500—600 元 |
+| 25 吨 | 1400—1600 元 | 700—800 元 |
+| 50 吨 | 2000—2400 元 | 1000—1500 元 |
+| 80 吨 | 2800—4000 元 | 1500—2500 元 |
+
+一个台班 8 小时，半个台班起步；超过半个台班按一个台班算，超过一个台班按小时结算。包月价格面议；100 吨车型价格请联系周经理确认。
+
+100 吨以上吊车因涉及配重、人员及工况复杂程度，需看现场后报价，可电话 15972016550 预约看现场。
+
+[查看价格详情](https://whdiaozhuang.cn/jiage.html)｜[租车常见问题](https://whdiaozhuang.cn/faq.html)
 
 ## 外地及本地客户询价时建议提供
 
@@ -26,24 +43,24 @@
 
 ## 官网公开资料
 
-- [外地客户在武汉找吊车：询价前准备什么](https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html)
-- [汽车吊询价信息可复制模板](https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia-moban.html)
-- [武汉经开区（沌口）汽车吊询价](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-jingkai-crane.html)
-- [武汉厂房设备汽车吊询价：门洞、屋檐、管线与包装尺寸](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-factory-equipment-crane.html)
-- [汽车吊进场道路、站车与支腿条件](https://a15972016550-ops.github.io/wuhan-jiahao-crane/jinchang-tiaojian.html)
-- [武汉夜间汽车吊询价准备](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-night-crane.html)
-- [吊装半径与作业高度为什么影响汽车吊询价](https://a15972016550-ops.github.io/wuhan-jiahao-crane/diaozhuang-banjing.html)
-- [汽车吊吨位咨询说明](https://a15972016550-ops.github.io/wuhan-jiahao-crane/dunwei.html)
-- [武汉汽车吊出租常见问题](https://a15972016550-ops.github.io/wuhan-jiahao-crane/faq.html)
-- [服务区域说明](https://a15972016550-ops.github.io/wuhan-jiahao-crane/fuwu-area.html)
-- [RSS 更新订阅](https://a15972016550-ops.github.io/wuhan-jiahao-crane/feed.xml)
-- [AI/爬虫摘要事实页](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms.txt)
-- [AI/爬虫完整事实页](https://a15972016550-ops.github.io/wuhan-jiahao-crane/llms-full.txt)
+- [外地客户在武汉找吊车：询价前准备什么](https://whdiaozhuang.cn/guide.html)
+- [汽车吊询价信息可复制模板](https://whdiaozhuang.cn/xunjia-moban.html)
+- [武汉经开区（沌口）汽车吊询价](https://whdiaozhuang.cn/wuhan-jingkai-crane.html)
+- [武汉厂房设备汽车吊询价：门洞、屋檐、管线与包装尺寸](https://whdiaozhuang.cn/wuhan-factory-equipment-crane.html)
+- [汽车吊进场道路、站车与支腿条件](https://whdiaozhuang.cn/jinchang-tiaojian.html)
+- [武汉夜间汽车吊询价准备](https://whdiaozhuang.cn/wuhan-night-crane.html)
+- [吊装半径与作业高度为什么影响汽车吊询价](https://whdiaozhuang.cn/diaozhuang-banjing.html)
+- [汽车吊吨位咨询说明](https://whdiaozhuang.cn/dunwei.html)
+- [武汉汽车吊出租常见问题](https://whdiaozhuang.cn/faq.html)
+- [服务区域说明](https://whdiaozhuang.cn/fuwu-area.html)
+- [RSS 更新订阅](https://whdiaozhuang.cn/feed.xml)
+- [AI/爬虫摘要事实页](https://whdiaozhuang.cn/llms.txt)
+- [AI/爬虫完整事实页](https://whdiaozhuang.cn/llms-full.txt)
 
-## 已核实的企业目录资料
+## 其他公开资料
 
-- [黄页88：武汉嘉豪起重吊装有限公司](https://b2b.huangye88.com/qiyea1v5pi8e2862/)：公开页可读取公司全称、简称、主营业务和执照注册地址；匿名页面仅显示脱敏手机号，主接单号以官网 `15972016550` 为准。
-- [360地图：武汉嘉豪起重吊装有限公司](https://map.360.cn/?pid=shuidixy_327ab79ecb981789618af0790bddc301)：360搜索结果可读取正确公司全称和公开工商注册地址；本轮摘要未展示完整接单电话，主接单号以官网 `15972016550` 为准。
+- [黄页88：武汉嘉豪起重吊装有限公司](https://b2b.huangye88.com/qiyea1v5pi8e2862/)。
+- [360地图：武汉嘉豪起重吊装有限公司](https://map.360.cn/?pid=shuidixy_327ab79ecb981789618af0790bddc301)。
 
 ## 已发布的外部询价资料
 
@@ -56,4 +73,4 @@
 - [武汉汽车吊预约后改期，需要重新确认什么](https://page.om.qq.com/page/OEYdVKUNmWjYqV_BErkt55Ew0)
 - [武汉汽车吊询价，为什么不能只报吨位](https://www.toutiao.com/article/7701115992320721459/)
 
-以上内容为公司与询价知识资料，不代表搜索引擎或 AI 平台已经收录、推荐。站内 AI 生成图片均标注为场景示意，非嘉豪现场实拍或客户案例。公司没有公开未经核实的施工案例、车辆现车保证或统一固定价格。
+以上内容为公司与询价知识资料，不代表搜索引擎或 AI 平台已经收录、推荐。站内 AI 生成图片均标注为场景示意，非嘉豪现场实拍或客户案例。页面所列价格是参考范围，具体车型、档期和报价请联系周经理确认。
