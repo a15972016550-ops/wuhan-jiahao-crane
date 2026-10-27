@@ -45,6 +45,7 @@
 - [东西湖区汽车吊出租询价与进场信息](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-dongxihu-crane.html)（项目入口、道路转弯与限高、站车地面和吊物资料准备；不表示街道驻点）
 - [硚口区汽车吊出租询价与市区进场信息](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-qiaokou-crane.html)（道路通行、站车空间、吊物和现场协调准备；不表示街道驻点）
 - [洪山区汽车吊出租询价与现场条件](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-hongshan-crane.html)（实际入口、上空遮挡、站车地面和吊物资料准备；不表示街道驻点）
+- [武昌区汽车吊出租询价与建筑周边信息](https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-wuchang-crane.html)（实际入口、建筑周边、站车地面、吊物和作业时段准备；不表示街道驻点）
 - [汽车吊询价信息可复制模板](https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia-moban.html)（电话或微信沟通清单；一般性询价准备，非车辆选型或施工方案）
 - [汽车吊进场道路、站车与支腿条件](https://a15972016550-ops.github.io/wuhan-jiahao-crane/jinchang-tiaojian.html)（一般性询价准备，非施工案例或安全方案）
 - [吊装半径与作业高度为什么影响汽车吊询价](https://a15972016550-ops.github.io/wuhan-jiahao-crane/diaozhuang-banjing.html)（一般性询价知识，非车辆选型或施工方案）
