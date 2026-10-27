@@ -25,6 +25,7 @@
 - 首页：https://a15972016550-ops.github.io/wuhan-jiahao-crane/ （服务与联系总览）
 - 询价指南：https://a15972016550-ops.github.io/wuhan-jiahao-crane/guide.html（外地客户准备清单）
 - 询价清单：https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia.html
+- 询价信息模板：https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia-moban.html（可复制的项目区域、时间、吊物、道路、站车和遮挡沟通清单）
 - 进场条件：https://a15972016550-ops.github.io/wuhan-jiahao-crane/jinchang-tiaojian.html（道路、转弯、站车地面、支腿空间、遮挡和作业时段的一般性询价准备）
 - 常见问题：https://a15972016550-ops.github.io/wuhan-jiahao-crane/faq.html
 - 吨位咨询：https://a15972016550-ops.github.io/wuhan-jiahao-crane/dunwei.html（8—800 吨口径）
