@@ -4,4 +4,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://a15972016550-ops.github.io/wuhan-jiahao-crane/sitemap.xml
+Sitemap: https://whdiaozhuang.cn/sitemap.xml

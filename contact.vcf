@@ -1,14 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-N:周;经理;;;
-FN:周经理（武汉嘉豪吊装）
+FN:周经理
 ORG:武汉嘉豪起重吊装有限公司
-TITLE:武汉吊车出租｜嘉豪吊装
-TEL;TYPE=CELL,VOICE:15972016550
-URL:https://a15972016550-ops.github.io/wuhan-jiahao-crane/
-NOTE:电话微信同号。以汉阳区为重点，服务武汉经开区
- （沌口）、蔡甸区、硚口区、东西湖区、江岸区、江
- 汉区、武昌区、洪山区和江夏区。武汉市内跨区需求
- ，以及向周边延伸约10—30公里的项目，均可联系确认
- 车辆与档期。
+TITLE:嘉豪吊装
+TEL;TYPE=CELL:15972016550
+URL:https://whdiaozhuang.cn/
+NOTE:电话微信同号。汉阳、沌口老关村地铁站周边30公里内；10—15公里为重点服务区。24小时可服务。
 END:VCARD
