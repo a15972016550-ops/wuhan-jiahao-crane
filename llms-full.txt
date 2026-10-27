@@ -31,6 +31,7 @@
 - 江夏区汽车吊询价：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-jiangxia-crane.html（外地施工团队的现场联系人、入口、吊物、站车和时间远程对接清单；不表示街道驻点）
 - 东西湖区汽车吊询价：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-dongxihu-crane.html（项目定位、实际入口、道路转弯与限高、站车地面、吊物和时间准备；不表示街道驻点）
 - 硚口区汽车吊询价：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-qiaokou-crane.html（项目定位、实际入口、道路通行、站车空间、吊物和现场协调准备；不表示街道驻点）
+- 洪山区汽车吊询价：https://a15972016550-ops.github.io/wuhan-jiahao-crane/wuhan-hongshan-crane.html（项目定位、实际入口、上空遮挡、站车地面、吊物和时间准备；不表示街道驻点）
 - 询价信息模板：https://a15972016550-ops.github.io/wuhan-jiahao-crane/xunjia-moban.html（可复制的项目区域、时间、吊物、道路、站车和遮挡沟通清单）
 - 进场条件：https://a15972016550-ops.github.io/wuhan-jiahao-crane/jinchang-tiaojian.html（道路、转弯、站车地面、支腿空间、遮挡和作业时段的一般性询价准备）
 - 吊装半径与作业高度：https://a15972016550-ops.github.io/wuhan-jiahao-crane/diaozhuang-banjing.html（说明重量、水平距离、高度、站车位置和遮挡等询价信息；非车辆选型或施工方案）
