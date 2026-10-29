@@ -26,3 +26,47 @@
 
 - 武汉吊车出租询价：多件设备如何整理吊装清单？（企鹅号“嘉豪汽车吊笔记”，AI辅助整理）：https://page.om.qq.com/page/OTN5cgbZuDIadLdgkAR06hFg0
 - 武汉100吨以上吊车怎么询价？先准备这些现场信息（搜狐号，AI辅助整理）：https://www.sohu.com/a/1094198296_123041772
+
+## 官网内容导航
+
+以下均为官网原文入口。区域页面用于询价参考，实际服务范围仍以老关村地铁站为中心30公里以内为准；30公里外能否承接待确认。参考价与作业条件应结合原文完整阅读，具体车辆、档期和报价逐单确认。
+
+### 公司、服务与联系
+
+- [武汉吊车出租租吊车，就找嘉豪。](https://whdiaozhuang.cn/)
+- [武汉嘉豪起重吊装有限公司](https://whdiaozhuang.cn/company.html)
+- [先确认作业地点，再安排武汉汽车吊](https://whdiaozhuang.cn/fuwu-area.html)
+- [武汉吊车出租（汽车吊）](https://whdiaozhuang.cn/wuhan-diaoche-chuzu.html)
+
+### 价格与车型
+
+- [武汉汉阳沌口吊车出租价格](https://whdiaozhuang.cn/jiage.html)
+- [武汉找汽车吊，吨位之外还要核对哪些信息？](https://whdiaozhuang.cn/dunwei.html)
+- [武汉25吨汽车吊出租，先核实现场和档期](https://whdiaozhuang.cn/wuhan-25-ton-crane.html)
+- [询问50吨汽车吊，不能只报吊物重量](https://whdiaozhuang.cn/wuhan-50-ton-crane.html)
+- [武汉夜间要用汽车吊，询价前先确认这些条件](https://whdiaozhuang.cn/wuhan-night-crane.html)
+
+### 询价与进场准备
+
+- [吊车出租常见问题](https://whdiaozhuang.cn/faq.html)
+- [来武汉找吊车，先准备哪些信息？](https://whdiaozhuang.cn/guide.html)
+- [武汉汉阳找汽车吊，询价前准备这4类信息](https://whdiaozhuang.cn/xunjia.html)
+- [找汽车吊时，怎样把需求一次说清楚？](https://whdiaozhuang.cn/xunjia-moban.html)
+- [汽车吊进场前，先确认这 6 项现场条件](https://whdiaozhuang.cn/jinchang-tiaojian.html)
+- [吊物重量相同，为什么还要问半径和高度？](https://whdiaozhuang.cn/diaozhuang-banjing.html)
+- [门洞、屋檐、管线和包装尺寸，先核对这 6 项](https://whdiaozhuang.cn/wuhan-factory-equipment-crane.html)
+
+### 区域询价参考
+
+- [园区项目找汽车吊，先把进场信息准备清楚](https://whdiaozhuang.cn/wuhan-jingkai-crane.html)
+- [蔡甸区项目找汽车吊，先把定位和现场条件说清楚](https://whdiaozhuang.cn/caidian-crane.html)
+- [外地团队在江夏区找汽车吊，先把现场信息远程对齐](https://whdiaozhuang.cn/wuhan-jiangxia-crane.html)
+- [东西湖吊车出租：50吨台班价格与进场准备](https://whdiaozhuang.cn/wuhan-dongxihu-crane.html)
+- [硚口区找汽车吊，先把车辆入口和作业空间说清楚](https://whdiaozhuang.cn/wuhan-qiaokou-crane.html)
+- [洪山区找汽车吊，先把入口、遮挡和站车条件说清楚](https://whdiaozhuang.cn/wuhan-hongshan-crane.html)
+- [武昌区找汽车吊，先把实际入口、建筑周边和作业时段说清楚](https://whdiaozhuang.cn/wuhan-wuchang-crane.html)
+- [江汉区找汽车吊，先确认到场路线和临时作业空间](https://whdiaozhuang.cn/wuhan-jianghan-crane.html)
+- [江岸区找汽车吊，把车辆到场和现场交接信息提前对齐](https://whdiaozhuang.cn/wuhan-jiangan-crane.html)
+
+完整问答文本：[llms-full.txt](https://whdiaozhuang.cn/llms-full.txt)
+网站地图：[sitemap.xml](https://whdiaozhuang.cn/sitemap.xml)
