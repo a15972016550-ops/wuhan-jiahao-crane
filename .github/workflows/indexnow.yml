@@ -6,9 +6,7 @@ on:
     paths:
       - "*.html"
       - "**/*.html"
-      - "sitemap.xml"
       - ".github/workflows/indexnow.yml"
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,7 +25,6 @@ jobs:
         env:
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
-          EVENT_NAME: ${{ github.event_name }}
         run: |
           python3 - <<'PY'
           import hashlib
@@ -49,28 +46,16 @@ jobs:
           def url_for(path):
               return BASE if path == "index.html" else BASE + quote(path, safe="/")
 
-          def sitemap_paths():
-              root = ET.parse("sitemap.xml").getroot()
-              paths = set()
-              for loc in root.findall(".//{*}loc"):
-                  parsed = urlsplit(loc.text or "")
-                  if parsed.scheme != "https" or parsed.netloc != HOST or parsed.query or parsed.fragment:
-                      raise ValueError("Sitemap contains an unexpected URL")
-                  path = unquote(parsed.path.lstrip("/")) or "index.html"
-                  if path.endswith(".html") and ".." not in Path(path).parts:
-                      paths.add(path)
-              return paths
-
           def changed_paths():
               before = os.environ.get("BEFORE_SHA", "")
               current = os.environ.get("CURRENT_SHA", "")
-              if os.environ.get("EVENT_NAME") == "workflow_dispatch" or not before or set(before) == {"0"}:
-                  return sitemap_paths()
+              if not before or set(before) == {"0"}:
+                  raise ValueError("Previous commit is unavailable; no URLs submitted")
               lines = subprocess.check_output(
                   ["git", "diff", "--no-renames", "--name-only", "--diff-filter=ACMRD", before, current],
                   text=True,
               ).splitlines()
-              return {p for p in lines if p == "sitemap.xml" or p.endswith(".html")}
+              return {p for p in lines if p.endswith(".html")}
 
           def published(path):
               expected = Path(path)
@@ -89,7 +74,7 @@ jobs:
           def main():
               paths = changed_paths()
               if not paths:
-                  print("No changed public HTML or sitemap URLs; nothing to submit.")
+                  print("No changed public HTML URLs; nothing to submit.")
                   return
 
               deadline = time.monotonic() + 120
