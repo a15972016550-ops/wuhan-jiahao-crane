@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a2a"/>
+      <stop offset="0.58" stop-color="#102e46"/>
+      <stop offset="1" stop-color="#071c2b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd783"/>
+      <stop offset="1" stop-color="#f1ad42"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#020a11" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="1020" cy="115" r="260" fill="#1f4a66" opacity="0.2"/>
+  <circle cx="55" cy="1260" r="300" fill="#1f4a66" opacity="0.17"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <rect x="76" y="70" width="68" height="68" rx="20" fill="url(#gold)"/>
+    <path d="M95 111h30M110 94v35M99 96l11 13 11-13" fill="none" stroke="#10263a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="164" y="105" fill="#f7f8fa" font-size="30" font-weight="700" letter-spacing="2">嘉豪吊装</text>
+    <text x="164" y="137" fill="#afc1cd" font-size="19" letter-spacing="1.5">武汉嘉豪起重吊装有限公司</text>
+    <text x="1000" y="112" text-anchor="end" fill="#d7e2e9" font-size="18" letter-spacing="2">武汉本地服务</text>
+
+    <rect x="76" y="197" width="188" height="42" rx="21" fill="#193b53" stroke="#4c6c81" stroke-opacity="0.75"/>
+    <circle cx="101" cy="218" r="6" fill="#f4bd63"/>
+    <text x="122" y="225" fill="#e6eef3" font-size="19" font-weight="600" letter-spacing="1.5">汽车吊出租咨询</text>
+    <text x="76" y="326" fill="#ffffff" font-size="76" font-weight="800" letter-spacing="3">武汉吊车出租</text>
+    <text x="80" y="382" fill="#c3d3de" font-size="26" letter-spacing="1.2">武汉汉阳 · 沌口一带</text>
+    <text x="80" y="423" fill="#c3d3de" font-size="26" letter-spacing="1.2">老关村地铁站为中心30公里内；范围外待确认</text>
+
+    <g filter="url(#shadow)">
+      <rect x="76" y="473" width="928" height="297" rx="28" fill="#f5f7f8"/>
+      <rect x="76" y="473" width="14" height="297" rx="7" fill="url(#gold)"/>
+      <text x="122" y="537" fill="#15344a" font-size="26" font-weight="700" letter-spacing="1">可咨询吨位示例</text>
+      <text x="956" y="537" text-anchor="end" fill="#607687" font-size="19" letter-spacing="1">汽车吊 · 按需协调</text>
+      <g fill="#15344a" font-size="30" font-weight="750" text-anchor="middle">
+        <rect x="122" y="568" width="132" height="63" rx="14" fill="#e7eef2"/><text x="188" y="610">8 吨</text>
+        <rect x="270" y="568" width="132" height="63" rx="14" fill="#e7eef2"/><text x="336" y="610">25 吨</text>
+        <rect x="418" y="568" width="132" height="63" rx="14" fill="#e7eef2"/><text x="484" y="610">35 吨</text>
+        <rect x="566" y="568" width="132" height="63" rx="14" fill="#e7eef2"/><text x="632" y="610">50 吨</text>
+        <rect x="714" y="568" width="132" height="63" rx="14" fill="#e7eef2"/><text x="780" y="610">80 吨</text>
+        <rect x="862" y="568" width="96" height="63" rx="14" fill="#e7eef2"/><text x="910" y="610">100 吨</text>
+      </g>
+      <g fill="#15344a" font-size="30" font-weight="750" text-anchor="middle">
+        <rect x="122" y="650" width="132" height="63" rx="14" fill="#e7eef2"/><text x="188" y="692">130 吨</text>
+        <rect x="270" y="650" width="132" height="63" rx="14" fill="#e7eef2"/><text x="336" y="692">200 吨</text>
+        <rect x="418" y="650" width="132" height="63" rx="14" fill="#e7eef2"/><text x="484" y="692">300 吨</text>
+        <rect x="566" y="650" width="132" height="63" rx="14" fill="#e7eef2"/><text x="632" y="692">500 吨</text>
+        <rect x="714" y="650" width="132" height="63" rx="14" fill="#e7eef2"/><text x="780" y="692">800 吨</text>
+      </g>
+      <text x="122" y="747" fill="#627b8b" font-size="18">车辆来源、档期及现场适用性按每单核实；吨位为咨询范围，不代表均有现车。</text>
+    </g>
+
+    <g>
+      <circle cx="100" cy="833" r="22" fill="#234b65"/>
+      <path d="M91 833l7 7 13-15" fill="none" stroke="#f4bd63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="140" y="842" fill="#edf3f6" font-size="24" font-weight="600">夜间可咨询，具体出车以车辆与档期核实为准</text>
+      <circle cx="100" cy="900" r="22" fill="#234b65"/>
+      <path d="M91 900l7 7 13-15" fill="none" stroke="#f4bd63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="140" y="909" fill="#edf3f6" font-size="24" font-weight="600">报价前请说明：地点、时间、吊物和现场条件</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="76" y="956" width="928" height="253" rx="28" fill="url(#gold)"/>
+      <text x="124" y="1015" fill="#183449" font-size="21" font-weight="700" letter-spacing="2">联系周经理 · 电话 / 微信同号</text>
+      <text x="122" y="1111" fill="#102a3d" font-size="69" font-weight="800" letter-spacing="1">159 7201 6550</text>
+      <rect x="122" y="1142" width="279" height="42" rx="21" fill="#173a51"/>
+      <text x="261" y="1170" text-anchor="middle" fill="#f4f7f8" font-size="19" font-weight="700" letter-spacing="1.5">电话 / 微信同号</text>
+      <text x="954" y="1172" text-anchor="end" fill="#344f61" font-size="19">先沟通需求，再核实车辆安排</text>
+    </g>
+
+    <text x="76" y="1280" fill="#a9bbc7" font-size="18" letter-spacing="0.6">服务范围与车型按实际需求沟通；价格、车辆、档期以逐单确认结果为准。</text>
+    <text x="1004" y="1280" text-anchor="end" fill="#a9bbc7" font-size="18">嘉豪吊装 · 武汉</text>
+  </g>
+</svg>
