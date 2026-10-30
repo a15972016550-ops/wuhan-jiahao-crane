@@ -2,3 +2,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 
 .wechat-qr{width:200px;height:auto;margin:18px auto 0}.qr-help{font-size:11px;color:#6c706f!important;line-height:1.7}dialog{max-height:90vh;overflow:auto}dialog .dialog-phone{font-size:25px;margin:10px 0 15px}dialog h2{font-size:27px}dialog>p:not(.eyebrow){margin-top:12px}.contact-qr{display:flex;gap:20px;align-items:center;width:100%;margin-top:8px}.contact-qr img{width:120px;height:auto}.contact-qr p{width:auto!important;font-size:12px!important;line-height:1.9}.contact-qr p strong{font-size:15px}.contact-qr p a{text-decoration:underline;text-underline-offset:4px}@media(max-width:700px){.wechat-qr{width:175px}dialog{padding:28px 25px}.contact-qr img{width:105px}}
+
+@media(max-width:700px){.hero-foot{font-size:13px;line-height:1.55}}
