@@ -15,3 +15,6 @@
 .quote-panel p { color:#59605a; }
 .guide-grid span { color:#59605a; }
 .contact-band .eyebrow { color:#4f410e; }
+
+/* Keep each of the three square panels at its original proportions. */
+.scene-picture{aspect-ratio:1}.scene-picture img{height:auto}
