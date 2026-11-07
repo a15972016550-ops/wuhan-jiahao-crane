@@ -81,15 +81,27 @@ jobs:
               deadline = time.monotonic() + 120
               pending = set(paths)
               while pending:
+                  checked = sorted(pending)
                   with ThreadPoolExecutor(max_workers=6) as pool:
-                      results = list(pool.map(published, sorted(pending)))
-                  pending = {p for p, ready in zip(sorted(pending), results) if not ready}
-                  if not pending:
+                      results = list(pool.map(published, checked))
+                  pending = {p for p, ready in zip(checked, results) if not ready}
+                  if not pending or time.monotonic() >= deadline:
                       break
-                  if time.monotonic() >= deadline:
-                      raise SystemExit("Live site is not yet the checked-out version; no URLs submitted: " + ", ".join(sorted(pending)))
                   print("Waiting for the live site to match:", ", ".join(sorted(pending)))
                   time.sleep(10)
+
+              # Recheck every candidate immediately before submission: a matching
+              # page may have changed while another page was pending.
+              checked = sorted(paths)
+              with ThreadPoolExecutor(max_workers=6) as pool:
+                  results = list(pool.map(published, checked))
+              paths = {p for p, ready in zip(checked, results) if ready}
+              skipped = set(checked) - paths
+              if skipped:
+                  print("::warning::Not submitted because live content differs or is unavailable: " + ", ".join(sorted(skipped)))
+              if not paths:
+                  print("No verified live URLs; nothing submitted.")
+                  return
 
               key = Path("6fc78e52c02958b2a79f85c10697ee37.txt").read_text(encoding="utf-8").strip()
               key_location = BASE + key + ".txt"
