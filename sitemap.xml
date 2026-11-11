@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url><loc>https://whdiaozhuang.cn/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://whdiaozhuang.cn/guide.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://whdiaozhuang.cn/faq.html</loc><lastmod>2026-11-05</lastmod></url>
@@ -25,5 +25,5 @@
   <url><loc>https://whdiaozhuang.cn/wuhan-jiangan-crane.html</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://whdiaozhuang.cn/wuhan-factory-equipment-crane.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://whdiaozhuang.cn/jiage.html</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://whdiaozhuang.cn/inquiry-video.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://whdiaozhuang.cn/inquiry-video.html</loc><lastmod>2026-11-07</lastmod><video:video><video:thumbnail_loc>https://whdiaozhuang.cn/assets/inquiry-preparation-cover.jpg</video:thumbnail_loc><video:title>预约武汉汽车吊前准备什么？</video:title><video:description>文字视频概括询价前需要沟通的吊物资料、作业范围和现场条件。</video:description><video:content_loc>https://whdiaozhuang.cn/assets/inquiry-preparation.mp4</video:content_loc><video:duration>24</video:duration></video:video></url>
 </urlset>
