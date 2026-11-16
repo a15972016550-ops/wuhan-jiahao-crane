@@ -63,6 +63,7 @@ document.addEventListener('click', async (event) => {
     button.textContent = '已复制询价模板';
     status.textContent = '模板已复制，可粘贴到微信后补充项目实际信息。';
   } catch (error) {
+    button.textContent = '复制询价模板';
     status.textContent = '当前浏览器不允许自动复制，请长按模板文字后手动复制。';
   }
 });
