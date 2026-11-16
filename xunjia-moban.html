@@ -23,7 +23,7 @@
   <meta name="twitter:image:alt" content="嘉豪吊装服务信息卡，含服务范围和联系方式">
   <style>
     :root{font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#152430;background:#f7f9fa}*{box-sizing:border-box}body{margin:0;line-height:1.72}a{color:#13506a}.wrap{max-width:900px;margin:auto;padding:0 22px}header{background:#102b3c;color:#fff}nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:66px}nav a{color:#fff;text-decoration:none;font-weight:800}.hero{background:linear-gradient(120deg,#102b3c,#286576);color:#fff;padding:56px 0}.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.2;margin:10px 0 18px}.hero p{font-size:18px;color:#e2f0f1}.btn{display:inline-block;background:#f9b83e;color:#162736;text-decoration:none;font-weight:800;border-radius:10px;padding:12px 20px;border:0;cursor:pointer;font:inherit}.card{background:#fff;border:1px solid #dfebed;border-radius:15px;padding:24px;margin:20px 0;box-shadow:0 6px 24px #0d2b3b0a}.card h2{margin-top:0;font-size:24px;line-height:1.35}.template{white-space:pre-wrap;background:#102b3c;color:#eef8f8;border-radius:12px;padding:20px;line-height:1.8;overflow-wrap:anywhere}.note{background:#e9f3f3;border-left:4px solid #286576;padding:16px 18px;margin:24px 0}.contact{background:#102b3c;color:#fff;padding:38px 0;margin-top:44px}.contact a{color:#ffd079}.phone{font-size:clamp(30px,6vw,44px);font-weight:900;text-decoration:none}footer{background:#0d2331;color:#cbdfe2;padding:24px 0}.small{font-size:14px;color:#526674}@media(max-width:640px){nav{align-items:flex-start;flex-direction:column;padding:14px 0}.hero{padding:42px 0}.card{padding:20px}}
-  </style>
+  .inquiry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.inquiry-grid label{display:flex;flex-direction:column;gap:4px;font-weight:700}#inquiry-form input,#inquiry-form textarea{font:inherit;width:100%;border:1px solid #9aadb4;border-radius:8px;padding:10px;color:#152430;background:#fff}#inquiry-result{margin-top:8px;resize:vertical}@media(max-width:640px){.inquiry-grid{grid-template-columns:1fr}}</style>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://whdiaozhuang.cn/#business","name":"武汉嘉豪起重吊装有限公司","alternateName":["嘉豪吊装","嘉豪吊车出租"],"url":"https://whdiaozhuang.cn/","telephone":"+86-15972016550","address":{"@type":"PostalAddress","addressLocality":"武汉市汉阳区","addressRegion":"湖北省","addressCountry":"CN"},"areaServed":"武汉汉阳、沌口一带，以老关村地铁站为中心30公里以内服务；10—15公里为重点服务区，具体到场时间以车辆档期和交通情况为准。30公里外能否承接待确认。","description":"武汉汉阳、沌口一带，以老关村地铁站为中心30公里以内服务；10—15公里为重点服务区，具体到场时间以车辆档期和交通情况为准。30公里外能否承接待确认。24小时可服务，夜间可加班，夜班加班费单独沟通。可安排8、10、12、25、35、50、80、100、130、200、300、400、500、600、800吨汽车吊。嘉豪有自有多吨位车辆；特殊吨位或临时车辆不足时可同行协调，具体车辆与档期逐单确认。营业执照、司机证件、车辆保险、检测报告和合格证齐全。","contactPoint":{"@type":"ContactPoint","telephone":"+86-15972016550","contactType":"吊车出租咨询","availableLanguage":"zh-CN"},"sameAs":["https://wuhan0228750.11467.com/","https://b2b.huangye88.com/qiyea1v5pi8e2862/"]},{"@type":"Service","@id":"https://whdiaozhuang.cn/xunjia-moban.html#service","name":"武汉吊车出租询价模板 汉阳沌口 嘉豪吊装","serviceType":"汽车吊出租","provider":{"@id":"https://whdiaozhuang.cn/#business"},"areaServed":"武汉汉阳、沌口一带，以老关村地铁站为中心30公里以内服务；10—15公里为重点服务区，具体到场时间以车辆档期和交通情况为准。30公里外能否承接待确认。","description":"可安排8、10、12、25、35、50、80、100、130、200、300、400、500、600、800吨汽车吊。嘉豪有自有多吨位车辆；特殊吨位或临时车辆不足时可同行协调，具体车辆与档期逐单确认。 一个台班8小时，半个台班起步；超过半个台班按一个台班算，超过一个台班按小时结算。价格含油和司机，临租无进场费。"}]}</script><link rel="stylesheet" href="./assets/geo-info.css"></head>
 <body>
   <header><nav class="wrap"><a href="./">嘉豪吊装</a><a href="tel:15972016550">周经理 15972016550</a></nav></header>
@@ -31,6 +31,7 @@
   <main class="wrap">
     <div class="note"><strong>使用说明：</strong>这是一般性询价沟通清单，不是车辆选型结论、施工方案或安全技术方案。不确定的数据可以写“待核实”，不要猜测重量、尺寸和现场条件。</div>
     <p><a href="https://whdiaozhuang.cn/inquiry-video.html">观看24秒询价准备视频：吊物、距离和现场条件</a>（无声音，可查看文字要点）。</p>
+    <section class="card"><h2>填写询价信息</h2><p>填已知的信息，不确定可留空；生成后复制到微信发送。内容只在当前页面处理，不会自动发送。</p><form id="inquiry-form"><div class="inquiry-grid"><label>项目位置<input name="location" type="text" maxlength="100" placeholder="例如：汉阳某小区"></label><label>计划用车时间<input name="time" type="text" maxlength="100" placeholder="日期和大致时段"></label><label>吊装物和件数<input name="load" type="text" maxlength="120" placeholder="例如：设备2件"></label><label>各件重量及尺寸<input name="weight" type="text" maxlength="120" placeholder="不清楚可写待核实"></label><label>站车位置到起落点距离<input name="distance" type="text" maxlength="120" placeholder="不清楚可写待核实"></label><label>道路、支腿及上方障碍<textarea name="site" rows="3" maxlength="300" placeholder="填写已知条件"></textarea></label></div><p><button class="btn" type="submit">生成询价内容</button></p><label for="inquiry-result">生成的内容，可修改后复制</label><textarea id="inquiry-result" rows="9" spellcheck="false" placeholder="点击生成后在这里查看"></textarea><p><button class="btn" type="button" id="copy-inquiry">复制填写内容</button></p><p id="inquiry-status" class="small" aria-live="polite"></p></form><p class="small">填写时请避免输入无关个人信息；现场照片和定位请在确认需要后自行发送。</p></section>
     <section class="card"><h2>可直接复制的询价模板</h2><p><button class="btn" type="button" data-copy-template>复制询价模板</button></p><p id="copy-status" class="small" aria-live="polite"></p><div class="template" id="quote-template">您好，我需要在武汉咨询汽车吊：
 1. 项目所在区和位置：
 2. 计划用车日期、进场时间：
@@ -66,6 +67,22 @@ document.addEventListener('click', async (event) => {
     button.textContent = '复制询价模板';
     status.textContent = '当前浏览器不允许自动复制，请长按模板文字后手动复制。';
   }
+});
+
+const inquiryForm = document.getElementById('inquiry-form');
+const inquiryResult = document.getElementById('inquiry-result');
+const inquiryStatus = document.getElementById('inquiry-status');
+inquiryForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const data = new FormData(inquiryForm);
+  const value = (key) => String(data.get(key) || '').trim() || '待核实';
+  inquiryResult.value = ['您好，我需要咨询汽车吊：', '项目位置：' + value('location'), '计划用车时间：' + value('time'), '吊装物和件数：' + value('load'), '各件重量及尺寸：' + value('weight'), '站车位置到起落点距离：' + value('distance'), '道路、支腿及上方障碍：' + value('site'), '其他情况及现场照片：可再沟通'].join('\n');
+  inquiryStatus.textContent = '已生成，请核对后复制并自行发送。';
+});
+document.getElementById('copy-inquiry').addEventListener('click', async () => {
+  if (!inquiryResult.value.trim()) { inquiryStatus.textContent = '请先填写并生成询价内容。'; return; }
+  try { await navigator.clipboard.writeText(inquiryResult.value); inquiryStatus.textContent = '已复制，可粘贴到微信并自行发送。'; }
+  catch (error) { inquiryResult.focus(); inquiryResult.select(); inquiryStatus.textContent = '无法自动复制，请长按上方内容手动复制。'; }
 });
 </script>
 </body>
