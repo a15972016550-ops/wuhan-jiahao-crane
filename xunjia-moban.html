@@ -31,7 +31,7 @@
   <main class="wrap">
     <div class="note"><strong>使用说明：</strong>这是一般性询价沟通清单，不是车辆选型结论、施工方案或安全技术方案。不确定的数据可以写“待核实”，不要猜测重量、尺寸和现场条件。</div>
     <p><a href="https://whdiaozhuang.cn/inquiry-video.html">观看24秒询价准备视频：吊物、距离和现场条件</a>（无声音，可查看文字要点）。</p>
-    <section class="card"><h2>填写询价信息</h2><p>填已知的信息，不确定可留空；生成后复制到微信发送。内容只在当前页面处理，不会自动发送。</p><form id="inquiry-form"><div class="inquiry-grid"><label>项目位置<input name="location" type="text" maxlength="100" placeholder="例如：汉阳某小区"></label><label>计划用车时间<input name="time" type="text" maxlength="100" placeholder="日期和大致时段"></label><label>吊装物和件数<input name="load" type="text" maxlength="120" placeholder="例如：设备2件"></label><label>各件重量及尺寸<input name="weight" type="text" maxlength="120" placeholder="不清楚可写待核实"></label><label>站车位置到起落点距离<input name="distance" type="text" maxlength="120" placeholder="不清楚可写待核实"></label><label>道路、支腿及上方障碍<textarea name="site" rows="3" maxlength="300" placeholder="填写已知条件"></textarea></label></div><p><button class="btn" type="submit">生成询价内容</button></p><label for="inquiry-result">生成的内容，可修改后复制</label><textarea id="inquiry-result" rows="9" spellcheck="false" placeholder="点击生成后在这里查看"></textarea><p><button class="btn" type="button" id="copy-inquiry">复制填写内容</button></p><p id="inquiry-status" class="small" aria-live="polite"></p></form><p class="small">填写时请避免输入无关个人信息；现场照片和定位请在确认需要后自行发送。</p></section>
+    <section class="card"><h2>填写询价信息</h2><p>填已知的信息，不确定可留空；生成后复制到微信发送。内容只在当前页面处理，不会自动发送。</p><div id="inquiry-form"><div class="inquiry-grid"><label>项目位置<input name="location" type="text" maxlength="100" placeholder="例如：汉阳某小区"></label><label>计划用车时间<input name="time" type="text" maxlength="100" placeholder="日期和大致时段"></label><label>吊装物和件数<input name="load" type="text" maxlength="120" placeholder="例如：设备2件"></label><label>各件重量及尺寸<input name="weight" type="text" maxlength="120" placeholder="不清楚可写待核实"></label><label>站车位置到起落点距离<input name="distance" type="text" maxlength="120" placeholder="不清楚可写待核实"></label><label>道路、支腿及上方障碍<textarea name="site" rows="3" maxlength="300" placeholder="填写已知条件"></textarea></label></div><p><button class="btn" type="button" id="generate-inquiry">生成询价内容</button></p><label for="inquiry-result">生成的内容，可修改后复制</label><textarea id="inquiry-result" rows="9" spellcheck="false" placeholder="点击生成后在这里查看"></textarea><p><button class="btn" type="button" id="copy-inquiry">复制填写内容</button></p><p id="inquiry-status" class="small" aria-live="polite"></p></div><p class="small">填写时请避免输入无关个人信息；现场照片和定位请在确认需要后自行发送。</p></section>
     <section class="card"><h2>可直接复制的询价模板</h2><p><button class="btn" type="button" data-copy-template>复制询价模板</button></p><p id="copy-status" class="small" aria-live="polite"></p><div class="template" id="quote-template">您好，我需要在武汉咨询汽车吊：
 1. 项目所在区和位置：
 2. 计划用车日期、进场时间：
@@ -72,10 +72,8 @@ document.addEventListener('click', async (event) => {
 const inquiryForm = document.getElementById('inquiry-form');
 const inquiryResult = document.getElementById('inquiry-result');
 const inquiryStatus = document.getElementById('inquiry-status');
-inquiryForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(inquiryForm);
-  const value = (key) => String(data.get(key) || '').trim() || '待核实';
+document.getElementById('generate-inquiry').addEventListener('click', () => {
+  const value = (key) => inquiryForm.querySelector('[name="' + key + '"]').value.trim() || '待核实';
   inquiryResult.value = ['您好，我需要咨询汽车吊：', '项目位置：' + value('location'), '计划用车时间：' + value('time'), '吊装物和件数：' + value('load'), '各件重量及尺寸：' + value('weight'), '站车位置到起落点距离：' + value('distance'), '道路、支腿及上方障碍：' + value('site'), '其他情况及现场照片：可再沟通'].join('\n');
   inquiryStatus.textContent = '已生成，请核对后复制并自行发送。';
 });
